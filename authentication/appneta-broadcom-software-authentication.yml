@@ -1,0 +1,35 @@
+generated: '2026-07-18'
+method: searched
+source: https://techdocs.broadcom.com/us/en/ca-enterprise-software/it-operations-management/appneta/GA/integrate/api/api-access-tokens.html
+docs: https://techdocs.broadcom.com/us/en/ca-enterprise-software/it-operations-management/appneta/GA/integrate/api-access-tokens.html
+summary:
+  types: [apiKey]
+  api_key_in: [header]
+  oauth2_flows: []
+  notes: >-
+    AppNeta authenticates REST API requests with an API access token passed in the
+    HTTP Authorization header using the "Token" scheme. Tokens are created in the
+    AppNeta web app and can be granted specific scope and permission levels without
+    creating additional AppNeta users. There is no OAuth 2.0 authorization-code flow;
+    the token is a long-lived bearer-style credential.
+schemes:
+  - name: ApiAccessToken
+    type: apiKey
+    in: header
+    parameter: Authorization
+    scheme_prefix: "Token"
+    description: >-
+      API access token credential. Pass as: Authorization: Token <token>. Applies to
+      both the v3 (Classic) and v4 (Intelligent Alarms) APIs.
+    example: |
+      curl -X GET \
+        -H "Authorization: Token <token>" \
+        -H "Accept: application/json" \
+        "https://<application_cluster>.pm.appneta.com/api/v4/networkPath"
+    sources: [docs]
+token_management:
+  creation: AppNeta web application (Manage > API Access Tokens)
+  scoped: true
+  scope_note: >-
+    Tokens can be issued with varying scope and permission levels to constrain what a
+    given script or integration may access.
