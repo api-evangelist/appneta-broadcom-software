@@ -1,0 +1,35 @@
+# AppNeta (Broadcom Software)
+
+> AppNeta is a network performance monitoring (NPM) platform, part of Broadcom's Enterprise Software (IT Operations Management) portfolio, delivering continuous end-to-end visibility into application, network-path, and end-user experience across SaaS, cloud, and internet-facing environments. Distributed Monitoring Points run active synthetic tests (network path, web/HTTP, browser experience) and stream metrics to the AppNeta SaaS platform. A token-authenticated REST API (v3 Classic, v4 Intelligent Alarms) exposes monitoring data, monitoring policies, Monitoring Point provisioning, and event/webhook integration.
+
+## API
+
+- [AppNeta REST API — docs](https://techdocs.broadcom.com/us/en/ca-enterprise-software/it-operations-management/appneta/GA/integrate/api.html): Token-auth REST API; base host https://{application_cluster}.pm.appneta.com/api/v4 (and /api/v3). JSON responses, standard HTTP status codes, rate-limited (429).
+- [API v4 reference](https://techdocs.broadcom.com/us/en/ca-enterprise-software/it-operations-management/appneta/GA/integrate/api/api-v4.html): Intelligent Alarms API, OpenAPI 3.0.
+- [API access tokens](https://techdocs.broadcom.com/us/en/ca-enterprise-software/it-operations-management/appneta/GA/integrate/api/api-access-tokens.html): Create scoped tokens; pass as `Authorization: Token <token>`.
+
+## Docs
+
+- [Developer portal / TechDocs](https://techdocs.broadcom.com/appneta)
+- [Getting started — API access tokens](https://techdocs.broadcom.com/us/en/ca-enterprise-software/it-operations-management/appneta/GA/integrate/api-access-tokens.html)
+- [SaaS release notes](https://techdocs.broadcom.com/us/en/ca-enterprise-software/it-operations-management/appneta/GA/release-notes/release-notes-saas.html)
+- [Status page](https://status.broadcom.com/services/appneta/)
+- [Trust center / compliance](https://www.broadcom.com/support/trust-center)
+
+## Artifacts
+
+- Authentication: authentication/appneta-broadcom-software-authentication.yml
+- Conventions: conventions/appneta-broadcom-software-conventions.yml
+- Lifecycle: lifecycle/appneta-broadcom-software-lifecycle.yml
+- Changelog: changelog/appneta-broadcom-software-changelog.yml
+- Error catalog: errors/appneta-broadcom-software-problem-types.yml
+- Webhooks / events: asyncapi/appneta-broadcom-software-observer-webhooks.yml
+- Trust center: security/appneta-broadcom-software-trust-center.yml
+- Domain security: security/appneta-broadcom-software-domain-security.yml
+
+## Company
+
+- [Website](https://www.appneta.com/)
+- [Blog](https://www.appneta.com/blog/)
+- [Pricing](https://www.appneta.com/pricing/)
+- [Get started](https://www.appneta.com/get-started/)

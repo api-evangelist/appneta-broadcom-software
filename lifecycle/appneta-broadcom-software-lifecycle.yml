@@ -1,0 +1,25 @@
+generated: '2026-07-18'
+method: searched
+source: https://techdocs.broadcom.com/us/en/ca-enterprise-software/it-operations-management/appneta/GA/integrate/api.html
+versioning:
+  scheme: uri-path
+  current: v4
+  supported: [v3, v4]
+  detail: >-
+    v3 (Classic) and v4 (Intelligent Alarms) run in parallel. v4 became generally
+    available (week of March 2, 2026) as part of the AppNeta with Intelligent Alarms
+    experience; the API interface and documentation were upgraded from Swagger to
+    OpenAPI 3.0.
+  docs: https://techdocs.broadcom.com/us/en/ca-enterprise-software/it-operations-management/appneta/GA/integrate/api/api-v4.html
+deprecation:
+  policy_url: https://techdocs.broadcom.com/us/en/ca-enterprise-software/it-operations-management/appneta/GA/release-notes/release-notes-saas.html
+  sunset_header: false
+  note: >-
+    API and platform changes are announced through the dated SaaS release notes.
+    RFC 8594 Sunset/Deprecation response headers are not documented.
+sla:
+  url: https://status.broadcom.com/services/appneta/
+  note: SaaS delivered under Broadcom enterprise software support; no public numeric uptime target published.
+status_page: https://status.broadcom.com/services/appneta/
+changelog_ref: changelog/appneta-broadcom-software-changelog.yml
+deprecated_operations: []

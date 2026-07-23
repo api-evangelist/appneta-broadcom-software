@@ -1,0 +1,49 @@
+generated: '2026-07-18'
+method: searched
+source: https://techdocs.broadcom.com/us/en/ca-enterprise-software/it-operations-management/appneta/GA/integrate/api.html
+summary: >-
+  Cross-cutting request/response conventions for the AppNeta REST API (v3 Classic and
+  v4 Intelligent Alarms), captured from the Broadcom TechDocs API reference. Token
+  auth, JSON payloads, standard HTTP status codes, and documented rate limiting.
+authentication:
+  style: api-key-header
+  header: "Authorization: Token <token>"
+  detail: authentication/appneta-broadcom-software-authentication.yml
+media_types:
+  request: application/json
+  response: application/json
+  note: >-
+    Results are delivered in a lightweight JSON format intended to be consumed by a
+    broad range of clients.
+versioning:
+  style: uri-path
+  versions: [v3, v4]
+  detail: >-
+    v3 is the Classic API; v4 is the Intelligent Alarms API. The base path carries the
+    version, e.g. /api/v3/... or /api/v4/.... See lifecycle for the full policy.
+  detail_ref: lifecycle/appneta-broadcom-software-lifecycle.yml
+rate_limiting:
+  supported: true
+  signal: HTTP 429 (Too Many Requests)
+  detail: >-
+    The API enforces rate limiting; exceeding the allowed request volume in a given
+    window returns 429. Specific quota values are not published in the API reference.
+error_envelope:
+  style: http-status
+  detail_ref: errors/appneta-broadcom-software-problem-types.yml
+  note: >-
+    Errors are signalled with standard HTTP status codes (400, 401, 403, 404, 406,
+    429, 500). AppNeta does not document an RFC 9457 problem+json envelope.
+pagination:
+  documented: false
+  note: >-
+    The public API reference excerpt does not document a cross-cutting pagination
+    scheme; not asserting one to avoid fabrication.
+idempotency:
+  documented: false
+  note: >-
+    No idempotency-key contract is documented for the AppNeta API.
+events:
+  supported: true
+  style: webhook (observer API / alarm connectors)
+  detail_ref: asyncapi/appneta-broadcom-software-observer-webhooks.yml

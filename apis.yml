@@ -1,8 +1,28 @@
 aid: appneta-broadcom-software
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/appneta-broadcom-software.png
 name: AppNeta (Broadcom Software)
-description: 'AppNeta (Broadcom Software) is a company surfaced as a portfolio company of bain-capital-ventures
-  and added to the API Evangelist network as a stub for enrichment. Sector: ai-infrastructure. This profile
-  is a lead awaiting the enrichment pipeline.'
+description: >-
+  AppNeta is a network performance monitoring (NPM) platform, now part of Broadcom's
+  Enterprise Software (IT Operations Management) portfolio, delivering continuous
+  end-to-end visibility into application, network-path, and end-user experience across
+  SaaS, cloud, and internet-facing environments. Distributed Monitoring Points run
+  active synthetic tests (network path, web/HTTP, and browser-based experience) and
+  stream metrics to the AppNeta SaaS platform. AppNeta exposes a token-authenticated
+  REST API (v3 for Classic and v4 for Intelligent Alarms) for retrieving monitoring
+  data, managing monitoring policies, provisioning Monitoring Points, and integrating
+  performance telemetry into external observability and data pipelines.
 url: https://raw.githubusercontent.com/api-evangelist/appneta-broadcom-software/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,11 +32,34 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Network Monitoring
+- Network Performance
+- Observability
+- Application Performance
+- Digital Experience Monitoring
+- Synthetic Monitoring
+- IT Operations
+- Broadcom
 - Ai Infrastructure
-apis: []
+apis:
+- name: AppNeta REST API
+  description: >-
+    Token-authenticated REST API for the AppNeta SaaS platform. v4 (Intelligent Alarms)
+    and v3 (Classic) expose monitoring data, monitoring policies, Monitoring Point
+    provisioning, web-application and network-path results. Base host is the customer's
+    application cluster, e.g. https://<application_cluster>.pm.appneta.com/api/v4.
+  humanURL: https://techdocs.broadcom.com/us/en/ca-enterprise-software/it-operations-management/appneta/GA/integrate/api.html
+  baseURL: https://{application_cluster}.pm.appneta.com/api/v4
+  properties:
+  - type: Documentation
+    url: https://techdocs.broadcom.com/us/en/ca-enterprise-software/it-operations-management/appneta/GA/integrate/api.html
+  - type: APIReference
+    url: https://techdocs.broadcom.com/us/en/ca-enterprise-software/it-operations-management/appneta/GA/integrate/api/api-v4.html
+  - type: Authentication
+    url: authentication/appneta-broadcom-software-authentication.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -25,3 +68,54 @@ maintainers:
 common:
 - type: Website
   url: https://www.appneta.com/
+- type: DeveloperPortal
+  url: https://techdocs.broadcom.com/appneta
+- type: Documentation
+  url: https://techdocs.broadcom.com/us/en/ca-enterprise-software/it-operations-management/appneta/GA/integrate/api.html
+- type: APIReference
+  url: https://techdocs.broadcom.com/us/en/ca-enterprise-software/it-operations-management/appneta/GA/integrate/api/api-v4.html
+- type: GettingStarted
+  url: https://techdocs.broadcom.com/us/en/ca-enterprise-software/it-operations-management/appneta/GA/integrate/api/api-access-tokens.html
+- type: Authentication
+  url: authentication/appneta-broadcom-software-authentication.yml
+- type: Blog
+  url: https://www.appneta.com/blog/
+- type: GitHubOrganization
+  url: https://github.com/appneta
+- type: StatusPage
+  url: https://status.broadcom.com/services/appneta/
+- type: Deprecation
+  url: https://techdocs.broadcom.com/us/en/ca-enterprise-software/it-operations-management/appneta/GA/release-notes/release-notes-saas.html
+- type: ChangeLog
+  url: changelog/appneta-broadcom-software-changelog.yml
+- type: Lifecycle
+  url: lifecycle/appneta-broadcom-software-lifecycle.yml
+- type: Conventions
+  url: conventions/appneta-broadcom-software-conventions.yml
+- type: ErrorCatalog
+  url: errors/appneta-broadcom-software-problem-types.yml
+- type: Webhooks
+  url: asyncapi/appneta-broadcom-software-observer-webhooks.yml
+- type: LLMsTxt
+  url: llms/appneta-broadcom-software-llms.txt
+- type: DomainSecurity
+  url: security/appneta-broadcom-software-domain-security.yml
+- type: TrustCenter
+  url: security/appneta-broadcom-software-trust-center.yml
+- type: Compliance
+  url: https://www.broadcom.com/support/trust-center
+- type: Support
+  url: https://support.broadcom.com
+- type: Pricing
+  url: https://www.appneta.com/pricing/
+- type: SignUp
+  url: https://www.appneta.com/get-started/
+- type: TermsOfService
+  url: https://www.broadcom.com/company/legal/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.broadcom.com/company/legal/privacy/policy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

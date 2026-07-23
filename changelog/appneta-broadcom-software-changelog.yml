@@ -1,0 +1,39 @@
+generated: '2026-07-18'
+method: searched
+source: https://techdocs.broadcom.com/us/en/ca-enterprise-software/it-operations-management/appneta/GA/release-notes/release-notes-saas.html
+scheme: dated-weekly-saas
+current_version: 19.10.0
+docs: https://techdocs.broadcom.com/us/en/ca-enterprise-software/it-operations-management/appneta/GA/release-notes.html
+window: recent
+entries:
+  - version: 19.10.0
+    date: '2026-05-25'
+    breaking: false
+    highlights:
+      - New AWS EC2 Cloud Monitoring Point model available for deployment.
+    source: https://techdocs.broadcom.com/us/en/ca-enterprise-software/it-operations-management/appneta/GA/release-notes/release-notes-saas.html
+  - version: 19.9.0
+    date: '2026-05-11'
+    breaking: false
+    highlights:
+      - New Intelligent Assistant AI chat bot using a Retrieval-Augmented Generation system over AppNeta technical documentation.
+    source: https://techdocs.broadcom.com/us/en/ca-enterprise-software/it-operations-management/appneta/GA/release-notes/release-notes-saas.html
+  - version: 19.6.0
+    date: '2026-03-30'
+    breaking: false
+    highlights:
+      - AppNeta with Intelligent Alarms experience made generally available (new framework for detecting and surfacing persistent network and application issues).
+    source: https://techdocs.broadcom.com/us/en/ca-enterprise-software/it-operations-management/appneta/GA/release-notes/release-notes-saas/2026-03-30-application.html
+  - version: v4-api-ga
+    date: '2026-03-02'
+    breaking: false
+    highlights:
+      - AppNeta API v4 generally available; adds alarm connector endpoints. API reference upgraded from Swagger to OpenAPI 3.0.
+      - New v3 endpoints added for monitoring policies (GET/POST /v3/monitoringPolicy, GET/PUT/DELETE /v3/monitoringPolicy/{id}).
+    source: https://techdocs.broadcom.com/us/en/ca-enterprise-software/it-operations-management/appneta/GA/integrate/api.html
+  - version: 19.2.0
+    date: '2026-02-02'
+    breaking: false
+    highlights:
+      - AppNeta SaaS 19.2.0 release.
+    source: https://techdocs.broadcom.com/us/en/ca-enterprise-software/it-operations-management/appneta/GA/release-notes/release-notes-saas/2026-02-02-application.html

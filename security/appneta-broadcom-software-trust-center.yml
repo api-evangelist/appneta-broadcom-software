@@ -1,0 +1,24 @@
+generated: '2026-07-18'
+method: searched
+probe: false
+source: https://www.broadcom.com/support/trust-center
+url: https://www.broadcom.com/support/trust-center
+compliance_url: https://www.broadcom.com/support/trust-center/compliance/iso
+scope_note: >-
+  AppNeta is part of Broadcom's Enterprise Software (IT Operations Management)
+  portfolio and is covered by Broadcom's corporate Trust Center and Cloud Services
+  Information Security Management System (ISMS). Certifications are Broadcom-wide and
+  periodically renewed; applicability to a specific AppNeta SaaS offering should be
+  confirmed with Broadcom.
+certifications:
+  - ISO 27001
+  - ISO 27017
+  - ISO 27018
+  - SOC 2
+  - SOC 3
+  - HIPAA
+  - PCI DSS
+  - FedRAMP
+evidence:
+  - source: https://www.broadcom.com/support/trust-center/compliance/iso
+    keywords: [iso 27001, iso 27017, iso 27018, soc 2, trust center, isms]

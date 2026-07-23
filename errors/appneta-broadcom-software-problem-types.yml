@@ -1,0 +1,32 @@
+generated: '2026-07-18'
+method: searched
+source: https://techdocs.broadcom.com/us/en/ca-enterprise-software/it-operations-management/appneta/GA/integrate/api.html
+format: http-status
+envelope:
+  style: http-status-code
+  problem_json: false
+  note: >-
+    AppNeta signals errors with standard HTTP status codes and a JSON body. It does not
+    document an RFC 9457 application/problem+json envelope.
+problems:
+  - status: 400
+    title: Bad Request
+    remediation: The request was malformed or contained invalid parameters; correct and retry.
+  - status: 401
+    title: Unauthorized
+    remediation: "Missing or invalid API access token; supply a valid Authorization: Token <token> header."
+  - status: 403
+    title: Forbidden
+    remediation: The token lacks the scope/permission for this resource; use a token with sufficient access.
+  - status: 404
+    title: Not Found
+    remediation: The endpoint or resource id does not exist; verify the path and id.
+  - status: 406
+    title: Not Acceptable
+    remediation: Requested representation is not available; set Accept to application/json.
+  - status: 429
+    title: Too Many Requests
+    remediation: Rate limit exceeded; back off and retry after slowing the request rate.
+  - status: 500
+    title: Internal Server Error
+    remediation: Server-side error; retry later or contact Broadcom support if persistent.
