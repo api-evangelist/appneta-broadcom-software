@@ -43,6 +43,17 @@ tags:
 - Synthetic Monitoring
 - IT Operations
 - Broadcom
+- AI Infrastructure
+tags_raw:
+- Company
+- Network Monitoring
+- Network Performance
+- Observability
+- Application Performance
+- Digital Experience Monitoring
+- Synthetic Monitoring
+- IT Operations
+- Broadcom
 - Ai Infrastructure
 apis:
 - name: AppNeta REST API
